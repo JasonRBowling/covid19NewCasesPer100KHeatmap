@@ -1,0 +1,12 @@
+#echo "Clearing old data..."
+#rm -rf covid-19-data/
+#rm us-states.csv
+#echo "Getting new data..."
+#git clone https://github.com/nytimes/covid-19-data
+#echo "Done."
+
+cp covid-19-data/us-states.csv .
+echo "Starting..."
+
+python3 heatmap-newcases.py
+echo "Done."
